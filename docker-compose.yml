@@ -1,0 +1,14 @@
+version: '3'
+services:
+  mysql-standalone:
+    image: mysql:latest
+    environment:
+      MYSQL_USER: 'service_user'
+      MYSQL_PASSWORD: 'service_user_password'
+      MYSQL_ROOT_PASSWORD: 'root_password'
+      MYSQL_DATABASE: 'user_service_schema'
+    ports:
+      - "3306:3306"
+    expose:
+      - "3306"
+      
