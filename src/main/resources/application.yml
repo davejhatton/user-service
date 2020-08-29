@@ -1,6 +1,9 @@
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/user_service_schema
+#    url: jdbc:mysql://user-service_user-service-network:3306/user_service_schema
+#    url: jdbc:mysql://localhost:3306/user_service_schema
+#    url: jdbc:mysql://user-service_default:3306/user_service_schema
+    url: jdbc:mysql://mysql-standalone:3306/user_service_schema
     username: service_user
     password: service_user_password
     driver-class-name: com.mysql.cj.jdbc.Driver
