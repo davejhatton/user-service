@@ -1,0 +1,7 @@
+FROM openjdk:11
+RUN  echo hello world
+RUN mkdir -p /usr/app
+WORKDIR /usr/app
+COPY  /target/user-service-0.0.1-SNAPSHOT.jar .
+RUN pwd
+RUN ls -a
